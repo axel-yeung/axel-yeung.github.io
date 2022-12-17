@@ -1,15 +1,51 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>index.html</title>
-	</head>
-	<body>
-		<a href="https://www.w3schools.com">This is a link</a>
-		<table>
-			<th>Hello Helaman!!</th>
-			<tr><td><img src="img\Picture2.jpg"></td></tr>
-			<tr><td>1</td></tr>
-			<tr><td>2</td></tr>
-		</table>
-	</body>
+  
+<head>
+    <title>
+        估你唔倒!
+    </title>
+</head>
+  
+<body style = "text-align:center;">
+      
+    <h1 style = "color:black;">
+        估你唔倒!
+    </h1>
+    <!--  
+    <p id = "GFG_UP" style =
+        "font-size: 15px; font-weight: bold;">
+    </p>
+	-->
+      
+    <p id = "GFG_DOWN" style =
+        "font-size: 128px; font-weight: bold; color: green;">
+    </p>
+	
+	<button id = "button" onclick = "GFG_Fun()">
+        <h1>下一個! Next!</h1>
+    </button>
+      
+    <script>
+        var up = document.getElementById('GFG_UP');
+        var down = document.getElementById('GFG_DOWN');
+          
+        var arr = ["壁虎","天台","星光大道","望遠鏡","牛奶","聖誕樹","魚柳包","洪水橋","運輸中心","真的愛你","香甜粟米片","彈鋼琴","本草植物","元朗圖書館","冷氣機","天星碼頭","跳高","馬拉松",
+		"洗衣機","校長","小販","安心出行","斑馬綫","班長","西瓜","遊樂場","半島酒店","郵輪碼頭","警察","居屋","尖沙咀","廸士尼樂園","鼓掌","無敵是最寂寞","口是心非","互聯網","面書","漢堡包",
+		"心臟病","考試","意大利粉","聖誕老人","報佳音","煎牛扒","真空煲","熨斗","不勞而獲","再接再厲","錦上添花","牙縫線","廚房","無拘無束","二人三足","對牛彈琴","踏單車","計算機","平板電腦",
+		"BB車","米奇老鼠","包餃子","太陽眼鏡","潛水","攪拌機","衣櫃","水撥","光管","印度","班戟","興奮","打邊爐","安樂窩","精神病","電視機","電飯煲","水落石出","夜長夢多","返老還童",
+		"坦桑尼亞","福如東海","火星衝日","無可奈何","一寸光陰一寸金","人心不足蛇吞象","樹欲靜而風不息","人怕出名豬怕肥","千里姻緣一線牽","一江春水向東流","鹽湖城","大窩口","揚州炒飯","乾炒牛河",
+		"蛋撻","白切雞","油雞","燒腩仔","乾燒伊麵","萄國雞飯","麥當勞","肯德基家鄉雞","巨無霸"
+		];
+          
+        up.innerHTML = "Click on the button to check "
+            + "the type of element.<br><br>" + arr;
+          
+        function GFG_Fun() {
+            down.innerHTML =
+                arr[Math.floor(Math.random() * arr.length)];
+        }
+    </script>
+</body>
+  
 </html>
